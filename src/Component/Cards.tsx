@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { ApiGet } from './ApiGet';
+import { Card } from '@shopify/polaris';
 
 type CardState = {
     totalTrips: number;
@@ -23,17 +24,14 @@ export class Cards extends React.Component<{}, CardState> {
         const passenersData: any = await ApiGet("https://api.instantwebtools.net/v1/passenger")
         let totalTrips: number = 0
         let oldestAirline: number = 2020
-        console.log(airlinesData)
         await passenersData.data.forEach((elt: { trips: number; })=>{
             if(typeof elt.trips === 'number'){
                 totalTrips += elt.trips
             }
         })
         await airlinesData.forEach((elt: { established: number; }) => {
-            console.log(elt.established)
             if (typeof elt.established === 'string' && Number(elt.established) < oldestAirline) {
                 oldestAirline = Number(elt.established)
-                console.log("@@@ old", oldestAirline)
             }
         })
         this.setState({ totalTrips });
@@ -44,11 +42,18 @@ export class Cards extends React.Component<{}, CardState> {
     public render(): React.ReactNode {
         return (
             <div>
-                <h1>Test</h1>
-                <h1>total number of trips: {this.state.totalTrips}</h1>
-                <h1>total number of airlines: {this.state.totalAirlines}</h1>
-                <h1>Overall sales in Euro: {this.state.overallSales}</h1>
-                <h1>Establishing year of the oldest airline: {this.state.oldestAirline}</h1>
+                <Card title="Total number of trips" sectioned>
+                    <p>{this.state.totalTrips}</p>
+                </Card>
+                <Card title="Total number of airlines" sectioned>
+                    <p>{this.state.totalAirlines}</p>
+                </Card>
+                <Card title="Overall sales in Euro" sectioned>
+                    <p>{this.state.overallSales}</p>
+                </Card>
+                <Card title="Establishing year of the oldest airline" sectioned>
+                    <p>{this.state.oldestAirline}</p>
+                </Card>
             </div>
         );
     }

@@ -1,18 +1,11 @@
 import * as React from 'react';
 import * as ReactDom from 'react-dom';
-import { Cards } from './Component/Cards'
-
-class App extends React.Component {
-    render() {
-        return (
-            <>
-                <Cards />
-            </>
-        );
-    }
-}
+import { AppProvider } from "@shopify/polaris";
+import en from '@shopify/polaris/locales/en.json';
+import { App } from "./App";
+import "@shopify/polaris/dist/styles.css";
 
 ReactDom.render(
-    <App />,
+    <AppProvider i18n={en}><App /></AppProvider>,
     document.getElementById('root')
 );
