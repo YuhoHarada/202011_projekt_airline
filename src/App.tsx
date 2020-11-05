@@ -6,7 +6,7 @@ import { MyDataTable } from './Component/MyDataTable'
 export class App extends React.Component {
     render() {
         return (
-            <div className="app">
+            <div id="app" className="app">
                 <Header />
                 <Cards />
                 <MyDataTable />

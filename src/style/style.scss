@@ -1,11 +1,90 @@
+$main_color: #B3C9E2; 
+$sub_color: #5870A8;
+$light_shades: #F8F6EF;
+$light_accent: #C9A896;
+$breakpoint-mobile: 640px;
+
+
 body{
-    background: radial-gradient(#ffffff80, #ffffffff),
+    background: radial-gradient(#ffffffa0, #ffffffff),
                 url("/img/background.jpg") center/cover no-repeat;
     background-attachment: fixed;
 }
+
+
 header{
-    background: black;
+    position: fixed;
+    width: 100vw;
+    background: $sub_color;
+    padding: 20px 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999999;
     h1{
-        color: red;
+        color: $light_shades;
+        font-size: 20px;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li{
+            margin-left: 1vw;
+        }
+        a{
+            color: $light_accent;
+            font-weight: 700;
+            text-decoration: none;
+            &:hover{
+                opacity: .7;
+            }
+        }
+    }
+    @media screen and (max-width: $breakpoint-mobile) {
+        ul{
+            display: none;
+        }
+    }
+}
+
+
+#cards{
+    padding-top: 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3vw;
+    row-gap: 30px;
+    .Polaris-Card{
+        height: 100%;
+        margin-top: 0;
+    }
+    @media screen and (max-width: $breakpoint-mobile) {
+        display: block;
+        margin-bottom: 50px;
+        .Polaris-Card{
+            margin-top: 2rem;
+        }
+    }
+}
+
+#pagination{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    button{
+        background: $main_color;
+        border: none;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &.activ{
+            background: $light_accent;
+        }
     }
 }

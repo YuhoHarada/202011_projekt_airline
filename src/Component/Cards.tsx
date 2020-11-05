@@ -64,7 +64,7 @@ export class Cards extends React.Component<unknown, CardState> {
     }
     public render(): React.ReactNode {
         return (
-            <div className="Polaris-Page">
+            <div id="cards" className="Polaris-Page">
                 <Card title="Total number of trips" sectioned>
                     <p>{this.state.totalTrips.toLocaleString()}</p>
                 </Card>

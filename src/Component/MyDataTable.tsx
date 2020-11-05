@@ -92,33 +92,41 @@ export class MyDataTable extends React.Component<unknown, DTState> {
     }
     public render(): React.ReactNode {
         return (
-            <Page title="Passenger Data">
-                <Card>
-                    <DataTable
-                        columnContentTypes={[
-                            'text',
-                            'text',
-                            'numeric',
-                            'numeric',
-                        ]}
-                        headings={[
-                            'ID',
-                            'Name',
-                            'Number of trips',
-                            'Total amount paid for flights',
-                        ]}
-                        rows={this.state.rows}
-                        footerContent={`Showing ${this.state.showStart} - ${this.state.showEnd} of ${this.state.totalPassengers} results`}
-                    />
-                </Card>
-                <div>
-                    <button onClick={() => this.handlePage(0)}>&lt;</button>
-                    {this.state.pagination.map((elt, i) =>
-                        <button key={i} onClick={()=> this.handlePage(elt)}>{elt+1}</button>
-                    )}
-                    <button onClick={() => this.handlePage(this.state.totalPages-1)}>&gt;</button>
-                </div>
-            </Page>
+            <div id="passenger">
+                <Page title="Passenger Data">
+                    <Card>
+                        <DataTable
+                            columnContentTypes={[
+                                'text',
+                                'text',
+                                'numeric',
+                                'numeric',
+                            ]}
+                            headings={[
+                                'ID',
+                                'Name',
+                                'Number of trips',
+                                'Total amount paid for flights',
+                            ]}
+                            rows={this.state.rows}
+                            footerContent={`Showing ${this.state.showStart} - ${this.state.showEnd} of ${this.state.totalPassengers} results`}
+                        />
+                    </Card>
+                    <div id="pagination">
+                        <button onClick={() => this.handlePage(0)}>&lt;</button>
+                        {this.state.pagination.map((elt, i) =>
+                            {
+                                if(elt === this.state.activPage) {
+                                    return <button className="activ" key={i} onClick={() => this.handlePage(elt)}>{elt + 1}</button>
+                                } else {
+                                    return <button key={i} onClick={() => this.handlePage(elt)}>{elt + 1}</button>
+                                }
+                            }
+                        )}
+                        <button onClick={() => this.handlePage(this.state.totalPages-1)}>&gt;</button>
+                    </div>
+                </Page>
+            </div>
         );
     }
 }
