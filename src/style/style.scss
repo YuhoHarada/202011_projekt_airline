@@ -4,6 +4,9 @@ $light_shades: #F8F6EF;
 $light_accent: #C9A896;
 $breakpoint-mobile: 640px;
 
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     background: radial-gradient(#ffffffa0, #ffffffff),
@@ -15,7 +18,8 @@ body{
 header{
     position: fixed;
     width: 100vw;
-    background: $sub_color;
+    background: linear-gradient(120deg, $main_color 0%, $sub_color 100%);
+    filter: drop-shadow(0px 0px 10px $sub_color);
     padding: 20px 5vw;
     display: flex;
     justify-content: space-between;
@@ -56,12 +60,12 @@ header{
     grid-template-columns: 1fr 1fr;
     column-gap: 3vw;
     row-gap: 30px;
-    margin-bottom: 100px;
     .Polaris-Card{
         height: 100%;
         margin-top: 0;
     }
     @media screen and (max-width: $breakpoint-mobile) {
+        padding-top: 80px;
         display: block;
         margin-bottom: 50px;
         .Polaris-Card{
@@ -70,12 +74,15 @@ header{
     }
 }
 
+
+#passenger{
+    padding-top: 100px;
+}
 #pagination{
     margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
     button{
         background: $main_color;
         border: none;
@@ -90,7 +97,9 @@ header{
     }
 }
 
+
 #post{
+    padding-top: 100px;
     margin-bottom: 50vh;
     form{
         padding: 20px;
