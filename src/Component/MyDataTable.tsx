@@ -8,18 +8,26 @@ type passengerType = {
     trips: number;
 }
 
+type passengerjsonType = {
+    totalPassengers: number;
+    totalPages: number;
+    data: passengerType[];
+}
+
+type rowsArray = [string, string, number, string];
+
 type DTState = {
     totalPassengers: number;
     totalPages: number;
     data: passengerType[];
-    rows: any[];
+    rows: Array<rowsArray>;
     activPage: number;
-    pagination: any[];
+    pagination: number[];
     showStart: number;
     showEnd: number;
 }
 
-export class MyDataTable extends React.Component<{}, DTState> {
+export class MyDataTable extends React.Component<unknown, DTState> {
     constructor(props: DTState) {
         super(props);
         this.state = {
@@ -34,22 +42,22 @@ export class MyDataTable extends React.Component<{}, DTState> {
         };
     }
     async componentDidMount() {
-        const passenersData: any = await ApiGet("https://api.instantwebtools.net/v1/passenger?page=" + this.state.activPage + "&size=25")
-        let rows: any = []
-        let pagination: any = []
+        const passenersData: passengerjsonType = await ApiGet("https://api.instantwebtools.net/v1/passenger?page=" + this.state.activPage + "&size=25")
+        const rows: Array<rowsArray> = []
+        const pagination: number[] = []
         await passenersData.data.forEach((elt: passengerType) => {
-            let item: any = []
-            item.push(elt._id)
-            item.push(elt.name)
-            item.push(elt.trips)
-            item.push("€ " + (elt.trips * 199).toLocaleString())
+            const item: rowsArray = ["", "", 0, ""]
+            item[0] = elt._id
+            item[1] = elt.name
+            item[2] = elt.trips
+            item[3] = "€ " + (elt.trips * 199).toLocaleString()
             rows.push(item)
         })
         this.setState({ rows });
         this.setState({ totalPassengers: passenersData.totalPassengers });
         this.setState({ totalPages: passenersData.totalPages },()=>{
             if(this.state.activPage < 5){
-                let i:number = 0
+                let i = 0
                 while(i < 10){
                     pagination.push(i)
                     i++
@@ -68,7 +76,7 @@ export class MyDataTable extends React.Component<{}, DTState> {
                 }
             }
             this.setState({ pagination });
-            let showStart: number = (this.state.activPage + 1) * 25 - 24
+            const showStart: number = (this.state.activPage + 1) * 25 - 24
             let showEnd: number = (this.state.activPage + 1) * 25
             if(showEnd> this.state.totalPassengers){
                 showEnd = this.state.totalPassengers

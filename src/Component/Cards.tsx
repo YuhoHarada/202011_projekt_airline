@@ -2,6 +2,29 @@ import * as React from 'react';
 import { ApiGet } from './ApiGet';
 import { Card } from '@shopify/polaris';
 
+type airlinesType = {
+    id: number;
+    name: string;
+    country: number;
+    logo: string;
+    slogan: string;
+    head_quaters: string;
+    website: string;
+    established: string;
+}
+
+type passengerType = {
+    _id: string;
+    name: string;
+    trips: number;
+}
+
+type passengerjsonType = {
+    totalPassengers: number;
+    totalPages: number;
+    data: passengerType[];
+}
+
 type CardState = {
     totalTrips: number;
     totalAirlines: number;
@@ -9,7 +32,7 @@ type CardState = {
     oldestAirline: number;
 }
 
-export class Cards extends React.Component<{}, CardState> {
+export class Cards extends React.Component<unknown, CardState> {
     constructor(props: CardState) {
         super(props);
         this.state = {
@@ -20,16 +43,16 @@ export class Cards extends React.Component<{}, CardState> {
         };
     }
     async componentDidMount() {
-        const airlinesData: any = await ApiGet("https://api.instantwebtools.net/v1/airlines")
-        const passenersData: any = await ApiGet("https://api.instantwebtools.net/v1/passenger")
-        let totalTrips: number = 0
-        let oldestAirline: number = 2020
+        const airlinesData: airlinesType[] = await ApiGet("https://api.instantwebtools.net/v1/airlines")
+        const passenersData: passengerjsonType = await ApiGet("https://api.instantwebtools.net/v1/passenger")
+        let totalTrips = 0
+        let oldestAirline = 2020
         await passenersData.data.forEach((elt: { trips: number; })=>{
             if(typeof elt.trips === 'number'){
                 totalTrips += elt.trips
             }
         })
-        await airlinesData.forEach((elt: { established: number; }) => {
+        await airlinesData.forEach((elt: { established: string; }) => {
             if (typeof elt.established === 'string' && Number(elt.established) < oldestAirline) {
                 oldestAirline = Number(elt.established)
             }
