@@ -17,15 +17,19 @@ export class AddPassenger extends React.Component<unknown, passengerType> {
             airline: 1,
         };
     }
+    // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
     handleNameChange = (event: string) => {
         this.setState({ name: event });
     }
+    // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
     handleTripsChange = (event: string) => {
         this.setState({ trips: Number(event) });
     }
+    // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
     handleAirlineChange = (event: string) => {
         this.setState({ airline: Number(event) });
     }
+    // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
     handlePost = () => {
         console.log(this.state)
         axios.post('https://api.instantwebtools.net/v1/passenger', this.state)

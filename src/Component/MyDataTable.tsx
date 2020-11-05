@@ -41,6 +41,7 @@ export class MyDataTable extends React.Component<unknown, DTState> {
             showEnd: 25
         };
     }
+    // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
     async componentDidMount() {
         const passenersData: passengerjsonType = await ApiGet("https://api.instantwebtools.net/v1/passenger?page=" + this.state.activPage + "&size=25")
         const rows: Array<rowsArray> = []
@@ -85,6 +86,7 @@ export class MyDataTable extends React.Component<unknown, DTState> {
             this.setState({ showEnd });
         });
     }
+    // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
     handlePage = (pageNumber: number) => {
         this.setState({ activPage: pageNumber },()=>{
             this.componentDidMount()

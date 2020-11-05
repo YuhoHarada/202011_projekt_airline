@@ -1,6 +1,7 @@
 import * as React from 'react';
 
 export class Header extends React.Component {
+    // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
     render() {
         return (
             <header>

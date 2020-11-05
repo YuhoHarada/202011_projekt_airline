@@ -33787,7 +33787,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "header {\n  background: black;\n}\nheader h1 {\n  color: red;\n}\n\n.app {\n  background: url(\"img/backgroud.jpg\") center/cover no-repeat;\n}", "",{"version":3,"sources":["webpack://./src/style/style.scss"],"names":[],"mappings":"AAAA;EACI,iBAAA;AACJ;AAAI;EACI,UAAA;AAER;;AACA;EACI,2DAAA;AAEJ","sourcesContent":["header{\r\n    background: black;\r\n    h1{\r\n        color: red;\r\n    }\r\n}\r\n.app{\r\n    background: url(\"img/backgroud.jpg\") center/cover no-repeat;\r\n}\r\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "body {\n  background: radial-gradient(#ffffffa0, #ffffffff), url(\"/img/background.jpg\") center/cover no-repeat;\n  background-attachment: fixed;\n}\n\nheader {\n  position: fixed;\n  width: 100vw;\n  background: #5870A8;\n  padding: 20px 5vw;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  z-index: 999999;\n}\nheader h1 {\n  color: #F8F6EF;\n  font-size: 20px;\n}\nheader ul {\n  list-style: none;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\nheader ul li {\n  margin-left: 1vw;\n}\nheader ul a {\n  color: #C9A896;\n  font-weight: 700;\n  text-decoration: none;\n}\nheader ul a:hover {\n  opacity: 0.7;\n}\n@media screen and (max-width: 640px) {\n  header ul {\n    display: none;\n  }\n}\n\n#cards {\n  padding-top: 150px;\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n  column-gap: 3vw;\n  row-gap: 30px;\n  margin-bottom: 100px;\n}\n#cards .Polaris-Card {\n  height: 100%;\n  margin-top: 0;\n}\n@media screen and (max-width: 640px) {\n  #cards {\n    display: block;\n    margin-bottom: 50px;\n  }\n  #cards .Polaris-Card {\n    margin-top: 2rem;\n  }\n}\n\n#pagination {\n  margin-top: 30px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin-bottom: 100px;\n}\n#pagination button {\n  background: #B3C9E2;\n  border: none;\n  width: 30px;\n  height: 30px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n#pagination button.activ {\n  background: #C9A896;\n}\n\n#post {\n  margin-bottom: 50vh;\n}\n#post form {\n  padding: 20px;\n}", "",{"version":3,"sources":["webpack://./src/style/style.scss"],"names":[],"mappings":"AAOA;EACI,oGAAA;EAEA,4BAAA;AAPJ;;AAWA;EACI,eAAA;EACA,YAAA;EACA,mBAhBQ;EAiBR,iBAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,eAAA;AARJ;AASI;EACI,cAtBO;EAuBP,eAAA;AAPR;AASI;EACI,gBAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;AAPR;AAQQ;EACI,gBAAA;AANZ;AAQQ;EACI,cAjCG;EAkCH,gBAAA;EACA,qBAAA;AANZ;AAOY;EACI,YAAA;AALhB;AASI;EACI;IACI,aAAA;EAPV;AACF;;AAYA;EACI,kBAAA;EACA,aAAA;EACA,8BAAA;EACA,eAAA;EACA,aAAA;EACA,oBAAA;AATJ;AAUI;EACI,YAAA;EACA,aAAA;AARR;AAUI;EAXJ;IAYQ,cAAA;IACA,mBAAA;EAPN;EAQM;IACI,gBAAA;EANV;AACF;;AAUA;EACI,gBAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,oBAAA;AAPJ;AAQI;EACI,mBA/EK;EAgFL,YAAA;EACA,WAAA;EACA,YAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;AANR;AAOQ;EACI,mBApFG;AA+Ef;;AAUA;EACI,mBAAA;AAPJ;AAQI;EACI,aAAA;AANR","sourcesContent":["$main_color: #B3C9E2; \r\n$sub_color: #5870A8;\r\n$light_shades: #F8F6EF;\r\n$light_accent: #C9A896;\r\n$breakpoint-mobile: 640px;\r\n\r\n\r\nbody{\r\n    background: radial-gradient(#ffffffa0, #ffffffff),\r\n                url(\"/img/background.jpg\") center/cover no-repeat;\r\n    background-attachment: fixed;\r\n}\r\n\r\n\r\nheader{\r\n    position: fixed;\r\n    width: 100vw;\r\n    background: $sub_color;\r\n    padding: 20px 5vw;\r\n    display: flex;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n    z-index: 999999;\r\n    h1{\r\n        color: $light_shades;\r\n        font-size: 20px;\r\n    }\r\n    ul{\r\n        list-style: none;\r\n        display: flex;\r\n        justify-content: center;\r\n        align-items: center;\r\n        li{\r\n            margin-left: 1vw;\r\n        }\r\n        a{\r\n            color: $light_accent;\r\n            font-weight: 700;\r\n            text-decoration: none;\r\n            &:hover{\r\n                opacity: .7;\r\n            }\r\n        }\r\n    }\r\n    @media screen and (max-width: $breakpoint-mobile) {\r\n        ul{\r\n            display: none;\r\n        }\r\n    }\r\n}\r\n\r\n\r\n#cards{\r\n    padding-top: 150px;\r\n    display: grid;\r\n    grid-template-columns: 1fr 1fr;\r\n    column-gap: 3vw;\r\n    row-gap: 30px;\r\n    margin-bottom: 100px;\r\n    .Polaris-Card{\r\n        height: 100%;\r\n        margin-top: 0;\r\n    }\r\n    @media screen and (max-width: $breakpoint-mobile) {\r\n        display: block;\r\n        margin-bottom: 50px;\r\n        .Polaris-Card{\r\n            margin-top: 2rem;\r\n        }\r\n    }\r\n}\r\n\r\n#pagination{\r\n    margin-top: 30px;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    margin-bottom: 100px;\r\n    button{\r\n        background: $main_color;\r\n        border: none;\r\n        width: 30px;\r\n        height: 30px;\r\n        display: flex;\r\n        justify-content: center;\r\n        align-items: center;\r\n        &.activ{\r\n            background: $light_accent;\r\n        }\r\n    }\r\n}\r\n\r\n#post{\r\n    margin-bottom: 50vh;\r\n    form{\r\n        padding: 20px;\r\n    }\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -34002,7 +34002,7 @@ function removeClass(element, className) {
 /*! namespace exports */
 /*! export default [provided] [no usage info] [missing usage info prevents renaming] */
 /*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_exports__, __webpack_require__.r, __webpack_require__.p, __webpack_require__.d, __webpack_require__.* */
+/*! runtime requirements: __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -34010,7 +34010,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "img/background.jpg");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/background.jpg");
 
 /***/ }),
 
@@ -71368,19 +71368,127 @@ exports.App = void 0;
 var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
 var Header_1 = __webpack_require__(/*! ./Component/Header */ "./src/Component/Header.tsx");
 var Cards_1 = __webpack_require__(/*! ./Component/Cards */ "./src/Component/Cards.tsx");
+var MyDataTable_1 = __webpack_require__(/*! ./Component/MyDataTable */ "./src/Component/MyDataTable.tsx");
+var AddPassenger_1 = __webpack_require__(/*! ./Component/AddPassenger */ "./src/Component/AddPassenger.tsx");
 var App = /** @class */ (function (_super) {
     __extends(App, _super);
     function App() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     App.prototype.render = function () {
-        return (React.createElement("div", { className: "app" },
+        return (React.createElement("div", { id: "app", className: "app" },
             React.createElement(Header_1.Header, null),
-            React.createElement(Cards_1.Cards, null)));
+            React.createElement(Cards_1.Cards, null),
+            React.createElement(MyDataTable_1.MyDataTable, null),
+            React.createElement(AddPassenger_1.AddPassenger, null)));
     };
     return App;
 }(React.Component));
 exports.App = App;
+
+
+/***/ }),
+
+/***/ "./src/Component/AddPassenger.tsx":
+/*!****************************************!*\
+  !*** ./src/Component/AddPassenger.tsx ***!
+  \****************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: top-level-this-exports, __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: this is used directly at 2:17-21 */
+/*! CommonJS bailout: this is used directly at 15:23-27 */
+/*! CommonJS bailout: this is used directly at 22:26-30 */
+/*! CommonJS bailout: this is used directly at 27:20-24 */
+/*! CommonJS bailout: this is used directly at 34:23-27 */
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.AddPassenger = void 0;
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var polaris_1 = __webpack_require__(/*! @shopify/polaris */ "./node_modules/@shopify/polaris/dist/esm/index.js");
+var axios_1 = __importDefault(__webpack_require__(/*! axios */ "./node_modules/axios/index.js"));
+var AddPassenger = /** @class */ (function (_super) {
+    __extends(AddPassenger, _super);
+    function AddPassenger(props) {
+        var _this = _super.call(this, props) || this;
+        _this.handleNameChange = function (event) {
+            _this.setState({ name: event });
+        };
+        _this.handleTripsChange = function (event) {
+            _this.setState({ trips: Number(event) });
+        };
+        _this.handleAirlineChange = function (event) {
+            _this.setState({ airline: Number(event) });
+        };
+        _this.handlePost = function () {
+            console.log(_this.state);
+            axios_1.default.post('https://api.instantwebtools.net/v1/passenger', _this.state)
+                .then(function (response) {
+                console.log(response.data);
+                _this.setState({ name: "" });
+                _this.setState({ trips: 0 });
+                _this.setState({ airline: 1 });
+            });
+        };
+        _this.state = {
+            name: "",
+            trips: 0,
+            airline: 1,
+        };
+        return _this;
+    }
+    AddPassenger.prototype.render = function () {
+        var _this = this;
+        return (React.createElement("div", { id: "post" },
+            React.createElement(polaris_1.Page, { title: "Add New Passenger" },
+                React.createElement(polaris_1.Card, null,
+                    React.createElement(polaris_1.Form, { noValidate: true, onSubmit: this.handlePost },
+                        React.createElement(polaris_1.FormLayout, null,
+                            React.createElement(polaris_1.TextField, { value: this.state.name, onChange: function (event) { return _this.handleNameChange(event); }, label: "name" }),
+                            React.createElement(polaris_1.TextField, { value: String(this.state.trips), onChange: function (event) { return _this.handleTripsChange(event); }, label: "number of trips", type: "number" }),
+                            React.createElement(polaris_1.TextField, { value: String(this.state.airline), onChange: function (event) { return _this.handleAirlineChange(event); }, label: "airline id", type: "number" }),
+                            React.createElement(polaris_1.Button, { submit: true }, "Submit")))))));
+    };
+    return AddPassenger;
+}(React.Component));
+exports.AddPassenger = AddPassenger;
 
 
 /***/ }),
@@ -71599,13 +71707,15 @@ var Cards = /** @class */ (function (_super) {
         });
     };
     Cards.prototype.render = function () {
-        return (React.createElement("div", null,
+        return (React.createElement("div", { id: "cards", className: "Polaris-Page" },
             React.createElement(polaris_1.Card, { title: "Total number of trips", sectioned: true },
-                React.createElement("p", null, this.state.totalTrips)),
+                React.createElement("p", null, this.state.totalTrips.toLocaleString())),
             React.createElement(polaris_1.Card, { title: "Total number of airlines", sectioned: true },
                 React.createElement("p", null, this.state.totalAirlines)),
             React.createElement(polaris_1.Card, { title: "Overall sales in Euro", sectioned: true },
-                React.createElement("p", null, this.state.overallSales)),
+                React.createElement("p", null,
+                    "\u20AC ",
+                    this.state.overallSales.toLocaleString())),
             React.createElement(polaris_1.Card, { title: "Establishing year of the oldest airline", sectioned: true },
                 React.createElement("p", null, this.state.oldestAirline))));
     };
@@ -71672,11 +71782,222 @@ var Header = /** @class */ (function (_super) {
     }
     Header.prototype.render = function () {
         return (React.createElement("header", null,
-            React.createElement("h1", null, "Title")));
+            React.createElement("h1", null, "AAA-AirTicket dashboard"),
+            React.createElement("ul", null,
+                React.createElement("li", null,
+                    React.createElement("a", { href: "#app" }, "TOP")),
+                React.createElement("li", null,
+                    React.createElement("a", { href: "#passenger" }, "PASSENGER")),
+                React.createElement("li", null,
+                    React.createElement("a", { href: "#post" }, "Add")))));
     };
     return Header;
 }(React.Component));
 exports.Header = Header;
+
+
+/***/ }),
+
+/***/ "./src/Component/MyDataTable.tsx":
+/*!***************************************!*\
+  !*** ./src/Component/MyDataTable.tsx ***!
+  \***************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: top-level-this-exports, __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: this is used directly at 2:17-21 */
+/*! CommonJS bailout: this is used directly at 15:23-27 */
+/*! CommonJS bailout: this is used directly at 22:26-30 */
+/*! CommonJS bailout: this is used directly at 27:20-24 */
+/*! CommonJS bailout: this is used directly at 34:17-21 */
+/*! CommonJS bailout: this is used directly at 43:19-23 */
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.MyDataTable = void 0;
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var ApiGet_1 = __webpack_require__(/*! ./ApiGet */ "./src/Component/ApiGet.tsx");
+var polaris_1 = __webpack_require__(/*! @shopify/polaris */ "./node_modules/@shopify/polaris/dist/esm/index.js");
+var MyDataTable = /** @class */ (function (_super) {
+    __extends(MyDataTable, _super);
+    function MyDataTable(props) {
+        var _this = _super.call(this, props) || this;
+        _this.handlePage = function (pageNumber) {
+            _this.setState({ activPage: pageNumber }, function () {
+                _this.componentDidMount();
+            });
+        };
+        _this.state = {
+            totalPassengers: 0,
+            totalPages: 0,
+            data: [],
+            rows: [],
+            activPage: 0,
+            pagination: [],
+            showStart: 1,
+            showEnd: 25
+        };
+        return _this;
+    }
+    MyDataTable.prototype.componentDidMount = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var passenersData, rows, pagination;
+            var _this = this;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, ApiGet_1.ApiGet("https://api.instantwebtools.net/v1/passenger?page=" + this.state.activPage + "&size=25")];
+                    case 1:
+                        passenersData = _a.sent();
+                        rows = [];
+                        pagination = [];
+                        return [4 /*yield*/, passenersData.data.forEach(function (elt) {
+                                var item = ["", "", 0, ""];
+                                item[0] = elt._id;
+                                item[1] = elt.name;
+                                item[2] = elt.trips;
+                                item[3] = "€ " + (elt.trips * 199).toLocaleString();
+                                rows.push(item);
+                            })];
+                    case 2:
+                        _a.sent();
+                        this.setState({ rows: rows });
+                        this.setState({ totalPassengers: passenersData.totalPassengers });
+                        this.setState({ totalPages: passenersData.totalPages }, function () {
+                            if (_this.state.activPage < 5) {
+                                var i = 0;
+                                while (i < 10) {
+                                    pagination.push(i);
+                                    i++;
+                                }
+                            }
+                            else if (_this.state.activPage > _this.state.totalPages - 4) {
+                                var i = _this.state.totalPages - 10;
+                                while (i < _this.state.totalPages) {
+                                    pagination.push(i);
+                                    i++;
+                                }
+                            }
+                            else {
+                                var i = _this.state.activPage - 4;
+                                while (i < _this.state.activPage + 6) {
+                                    pagination.push(i);
+                                    i++;
+                                }
+                            }
+                            _this.setState({ pagination: pagination });
+                            var showStart = (_this.state.activPage + 1) * 25 - 24;
+                            var showEnd = (_this.state.activPage + 1) * 25;
+                            if (showEnd > _this.state.totalPassengers) {
+                                showEnd = _this.state.totalPassengers;
+                            }
+                            _this.setState({ showStart: showStart });
+                            _this.setState({ showEnd: showEnd });
+                        });
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    MyDataTable.prototype.render = function () {
+        var _this = this;
+        return (React.createElement("div", { id: "passenger" },
+            React.createElement(polaris_1.Page, { title: "Passenger Data" },
+                React.createElement(polaris_1.Card, null,
+                    React.createElement(polaris_1.DataTable, { columnContentTypes: [
+                            'text',
+                            'text',
+                            'numeric',
+                            'numeric',
+                        ], headings: [
+                            'ID',
+                            'Name',
+                            'Number of trips',
+                            'Total amount paid for flights',
+                        ], rows: this.state.rows, footerContent: "Showing " + this.state.showStart + " - " + this.state.showEnd + " of " + this.state.totalPassengers + " results" })),
+                React.createElement("div", { id: "pagination" },
+                    React.createElement("button", { onClick: function () { return _this.handlePage(0); } }, "<"),
+                    this.state.pagination.map(function (elt, i) {
+                        if (elt === _this.state.activPage) {
+                            return React.createElement("button", { className: "activ", key: i, onClick: function () { return _this.handlePage(elt); } }, elt + 1);
+                        }
+                        else {
+                            return React.createElement("button", { key: i, onClick: function () { return _this.handlePage(elt); } }, elt + 1);
+                        }
+                    }),
+                    React.createElement("button", { onClick: function () { return _this.handlePage(_this.state.totalPages - 1); } }, ">")))));
+    };
+    return MyDataTable;
+}(React.Component));
+exports.MyDataTable = MyDataTable;
 
 
 /***/ }),
@@ -72101,26 +72422,6 @@ function __classPrivateFieldSet(receiver, privateMap, value) {
 /******/ 			if (!module.children) module.children = [];
 /******/ 			return module;
 /******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/publicPath */
-/******/ 	(() => {
-/******/ 		var scriptUrl;
-/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
-/******/ 		var document = __webpack_require__.g.document;
-/******/ 		if (!scriptUrl && document) {
-/******/ 			if (document.currentScript)
-/******/ 				scriptUrl = document.currentScript.src
-/******/ 			if (!scriptUrl) {
-/******/ 				var scripts = document.getElementsByTagName("script");
-/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
-/******/ 			}
-/******/ 		}
-/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
-/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
-/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
-/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
-/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /************************************************************************/

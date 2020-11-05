@@ -51,11 +51,12 @@ header{
 
 
 #cards{
-    padding-top: 120px;
+    padding-top: 150px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 3vw;
     row-gap: 30px;
+    margin-bottom: 100px;
     .Polaris-Card{
         height: 100%;
         margin-top: 0;

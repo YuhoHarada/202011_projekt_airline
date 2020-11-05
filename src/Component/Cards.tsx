@@ -42,6 +42,7 @@ export class Cards extends React.Component<unknown, CardState> {
             oldestAirline: 0,
         };
     }
+    // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
     async componentDidMount() {
         const airlinesData: airlinesType[] = await ApiGet("https://api.instantwebtools.net/v1/airlines")
         const passenersData: passengerjsonType = await ApiGet("https://api.instantwebtools.net/v1/passenger")
