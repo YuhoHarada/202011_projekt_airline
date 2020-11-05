@@ -33763,6 +33763,37 @@ ___CSS_LOADER_EXPORT___.push([module.id, ":root{ --polaris-version-number:'5.10.
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js?url=false!./node_modules/sass-loader/dist/cjs.js!./src/style/style.scss":
+/*!*********************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js?url=false!./node_modules/sass-loader/dist/cjs.js!./src/style/style.scss ***!
+  \*********************************************************************************************************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_require__.n, __webpack_exports__, __webpack_require__.r, module.id, __webpack_require__.d, __webpack_require__.*, module */
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/cssWithMappingToString.js */ "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "header {\n  background: black;\n}\nheader h1 {\n  color: red;\n}\n\n.app {\n  background: url(\"img/backgroud.jpg\") center/cover no-repeat;\n}", "",{"version":3,"sources":["webpack://./src/style/style.scss"],"names":[],"mappings":"AAAA;EACI,iBAAA;AACJ;AAAI;EACI,UAAA;AAER;;AACA;EACI,2DAAA;AAEJ","sourcesContent":["header{\r\n    background: black;\r\n    h1{\r\n        color: red;\r\n    }\r\n}\r\n.app{\r\n    background: url(\"img/backgroud.jpg\") center/cover no-repeat;\r\n}\r\n"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/runtime/api.js":
 /*!*****************************************************!*\
   !*** ./node_modules/css-loader/dist/runtime/api.js ***!
@@ -33961,6 +33992,25 @@ function removeClass(element, className) {
     element.setAttribute('class', replaceClassName(element.className && element.className.baseVal || '', className));
   }
 }
+
+/***/ }),
+
+/***/ "./src/img/background.jpg":
+/*!********************************!*\
+  !*** ./src/img/background.jpg ***!
+  \********************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_exports__, __webpack_require__.r, __webpack_require__.p, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "img/background.jpg");
 
 /***/ }),
 
@@ -70951,6 +71001,40 @@ var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMP
 
 /***/ }),
 
+/***/ "./src/style/style.scss":
+/*!******************************!*\
+  !*** ./src/style/style.scss ***!
+  \******************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_require__.n, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_url_false_node_modules_sass_loader_dist_cjs_js_style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js?url=false!../../node_modules/sass-loader/dist/cjs.js!./style.scss */ "./node_modules/css-loader/dist/cjs.js?url=false!./node_modules/sass-loader/dist/cjs.js!./src/style/style.scss");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_url_false_node_modules_sass_loader_dist_cjs_js_style_scss__WEBPACK_IMPORTED_MODULE_1__.default, options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_url_false_node_modules_sass_loader_dist_cjs_js_style_scss__WEBPACK_IMPORTED_MODULE_1__.default.locals || {});
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js":
 /*!****************************************************************************!*\
   !*** ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
@@ -71282,6 +71366,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.App = void 0;
 var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var Header_1 = __webpack_require__(/*! ./Component/Header */ "./src/Component/Header.tsx");
 var Cards_1 = __webpack_require__(/*! ./Component/Cards */ "./src/Component/Cards.tsx");
 var App = /** @class */ (function (_super) {
     __extends(App, _super);
@@ -71289,7 +71374,8 @@ var App = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     App.prototype.render = function () {
-        return (React.createElement(React.Fragment, null,
+        return (React.createElement("div", { className: "app" },
+            React.createElement(Header_1.Header, null),
             React.createElement(Cards_1.Cards, null)));
     };
     return App;
@@ -71463,6 +71549,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Cards = void 0;
 var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
 var ApiGet_1 = __webpack_require__(/*! ./ApiGet */ "./src/Component/ApiGet.tsx");
+var polaris_1 = __webpack_require__(/*! @shopify/polaris */ "./node_modules/@shopify/polaris/dist/esm/index.js");
 var Cards = /** @class */ (function (_super) {
     __extends(Cards, _super);
     function Cards(props) {
@@ -71488,7 +71575,6 @@ var Cards = /** @class */ (function (_super) {
                         passenersData = _a.sent();
                         totalTrips = 0;
                         oldestAirline = 2020;
-                        console.log(airlinesData);
                         return [4 /*yield*/, passenersData.data.forEach(function (elt) {
                                 if (typeof elt.trips === 'number') {
                                     totalTrips += elt.trips;
@@ -71497,10 +71583,8 @@ var Cards = /** @class */ (function (_super) {
                     case 3:
                         _a.sent();
                         return [4 /*yield*/, airlinesData.forEach(function (elt) {
-                                console.log(elt.established);
                                 if (typeof elt.established === 'string' && Number(elt.established) < oldestAirline) {
                                     oldestAirline = Number(elt.established);
-                                    console.log("@@@ old", oldestAirline);
                                 }
                             })];
                     case 4:
@@ -71516,23 +71600,83 @@ var Cards = /** @class */ (function (_super) {
     };
     Cards.prototype.render = function () {
         return (React.createElement("div", null,
-            React.createElement("h1", null, "Test"),
-            React.createElement("h1", null,
-                "total number of trips: ",
-                this.state.totalTrips),
-            React.createElement("h1", null,
-                "total number of airlines: ",
-                this.state.totalAirlines),
-            React.createElement("h1", null,
-                "Overall sales in Euro: ",
-                this.state.overallSales),
-            React.createElement("h1", null,
-                "Establishing year of the oldest airline: ",
-                this.state.oldestAirline)));
+            React.createElement(polaris_1.Card, { title: "Total number of trips", sectioned: true },
+                React.createElement("p", null, this.state.totalTrips)),
+            React.createElement(polaris_1.Card, { title: "Total number of airlines", sectioned: true },
+                React.createElement("p", null, this.state.totalAirlines)),
+            React.createElement(polaris_1.Card, { title: "Overall sales in Euro", sectioned: true },
+                React.createElement("p", null, this.state.overallSales)),
+            React.createElement(polaris_1.Card, { title: "Establishing year of the oldest airline", sectioned: true },
+                React.createElement("p", null, this.state.oldestAirline))));
     };
     return Cards;
 }(React.Component));
 exports.Cards = Cards;
+
+
+/***/ }),
+
+/***/ "./src/Component/Header.tsx":
+/*!**********************************!*\
+  !*** ./src/Component/Header.tsx ***!
+  \**********************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements: top-level-this-exports, __webpack_exports__, __webpack_require__ */
+/*! CommonJS bailout: this is used directly at 2:17-21 */
+/*! CommonJS bailout: this is used directly at 15:23-27 */
+/*! CommonJS bailout: this is used directly at 22:26-30 */
+/*! CommonJS bailout: this is used directly at 27:20-24 */
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.Header = void 0;
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var Header = /** @class */ (function (_super) {
+    __extends(Header, _super);
+    function Header() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    Header.prototype.render = function () {
+        return (React.createElement("header", null,
+            React.createElement("h1", null, "Title")));
+    };
+    return Header;
+}(React.Component));
+exports.Header = Header;
 
 
 /***/ }),
@@ -71580,6 +71724,8 @@ var polaris_1 = __webpack_require__(/*! @shopify/polaris */ "./node_modules/@sho
 var en_json_1 = __importDefault(__webpack_require__(/*! @shopify/polaris/locales/en.json */ "./node_modules/@shopify/polaris/locales/en.json"));
 var App_1 = __webpack_require__(/*! ./App */ "./src/App.tsx");
 __webpack_require__(/*! @shopify/polaris/dist/styles.css */ "./node_modules/@shopify/polaris/dist/styles.css");
+__webpack_require__(/*! ./style/style.scss */ "./src/style/style.scss");
+__webpack_require__(/*! ./img/background.jpg */ "./src/img/background.jpg");
 ReactDom.render(React.createElement(polaris_1.AppProvider, { i18n: en_json_1.default },
     React.createElement(App_1.App, null)), document.getElementById('root'));
 
@@ -71955,6 +72101,26 @@ function __classPrivateFieldSet(receiver, privateMap, value) {
 /******/ 			if (!module.children) module.children = [];
 /******/ 			return module;
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /************************************************************************/

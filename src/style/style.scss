@@ -1,0 +1,11 @@
+body{
+    background: radial-gradient(#ffffff80, #ffffffff),
+                url("/img/background.jpg") center/cover no-repeat;
+    background-attachment: fixed;
+}
+header{
+    background: black;
+    h1{
+        color: red;
+    }
+}

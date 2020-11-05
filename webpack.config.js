@@ -10,7 +10,8 @@ module.exports = {
     entry: './src/index.tsx',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'index.js'
+        filename: 'index.js',
+        publicPath: '/'
     },
     resolve: {
         extensions: ['.js', '.json', '.ts', '.tsx']
@@ -28,7 +29,7 @@ module.exports = {
                 test: /\.s[ac]ss$/i,
                 use: [
                     'style-loader',
-                    'css-loader',
+                    'css-loader?url=false',
                     'sass-loader',
                 ],
             },
@@ -38,6 +39,15 @@ module.exports = {
                     'style-loader',
                     'css-loader',
                 ]
+            },
+            {
+                test: /\.(jpg|png|gif|svg|ico)$/,
+                loader: 'file-loader',
+                options: {
+                    outputPath: 'img/',
+                    name: '[name].[ext]',
+                    publicPath: '/'
+                }
             },
         ]
     },

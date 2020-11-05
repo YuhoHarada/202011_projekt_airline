@@ -41,15 +41,15 @@ export class Cards extends React.Component<{}, CardState> {
     }
     public render(): React.ReactNode {
         return (
-            <div>
+            <div className="Polaris-Page">
                 <Card title="Total number of trips" sectioned>
-                    <p>{this.state.totalTrips}</p>
+                    <p>{this.state.totalTrips.toLocaleString()}</p>
                 </Card>
                 <Card title="Total number of airlines" sectioned>
                     <p>{this.state.totalAirlines}</p>
                 </Card>
                 <Card title="Overall sales in Euro" sectioned>
-                    <p>{this.state.overallSales}</p>
+                    <p>€ {this.state.overallSales.toLocaleString()}</p>
                 </Card>
                 <Card title="Establishing year of the oldest airline" sectioned>
                     <p>{this.state.oldestAirline}</p>
